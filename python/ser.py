@@ -194,7 +194,7 @@ class Talon:
     def __return__data(self, datas):
         if len(datas) == 0:
             return False
-        if datas[0] == 0xeb and datas[1] == 0x90:
+        if datas[0] != 0xee or datas[1] == 0x16:
             return False
         # 判断校验和
         if sum(datas[2:-1]) & 0xff != datas[-1]:
