@@ -1,4 +1,6 @@
 
+#ifndef ASKEYNIL__TALON_H
+#define ASKEYNIL__TALON_H
 
 #include <string>
 
@@ -174,3 +176,4 @@ private:
   void setupData(const unsigned char *buf);
 };
 
+#endif //ASKEYNIL__TALON_H
